@@ -1,0 +1,107 @@
+theme = "tokyo"
+
+[editor]
+idle-timeout = 1000
+line-number = "relative"
+mouse = false
+shell = ["fish", "-c" ]
+cursorline = true
+bufferline = "multiple"
+jump-label-alphabet = "abcdefghijklmnopqrstuvwxyzöüä"
+
+[editor.lsp]
+display-inlay-hints = true
+inlay-hints-length-limit = 50
+
+[editor.statusline]
+left = ["mode", "spinner", "spacer", "version-control" ]
+center = ["file-name"]
+right = ["diagnostics", "position", "total-line-numbers", "spacer", "register", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-pairs]
+# '(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+[keys.normal]
+"?" = "command_palette"
+Y = "yank_to_clipboard"
+L = "extend_to_line_bounds"
+"A-d" = "no_op"
+r = "change_selection"
+"%" = "no_op"
+"$" = "select_all"
+"K" = "hover"
+# "C-l" = "code_lens"
+V = ["extend_to_line_start", "select_mode"]
+w = ["move_next_word_start", "collapse_selection"]
+e = ["move_next_word_end", "collapse_selection"]
+b = ["move_prev_word_start", "collapse_selection"]
+W = ["move_next_long_word_start", "collapse_selection"]
+E = ["move_next_long_word_end", "collapse_selection"]
+B = ["move_prev_long_word_start", "collapse_selection"]
+
+[keys.normal.space]
+"/" = "no_op"
+e = "no_op"
+E = "no_op"
+h = "no_op"
+y = "no_op"
+Y = "no_op"
+p = "no_op"
+P = "no_op"
+k = ":buffer-close"
+O = ":buffer-close-others"
+"A-c" = "no_op"
+g = "global_search"
+c = "changed_file_picker"
+"space" = "goto_word"
+
+[keys.select]
+"?" = "command_palette"
+Y = "yank_to_clipboard"
+L = "extend_to_line_bounds"
+"A-d" = "no_op"
+# C = "toggle_comments"
+# "Ctrl-c" = "copy_selection_on_next_line"
+r = "change_selection"
+"%" = "no_op"
+"$" = "select_all"
+"K" = "hover"
+V = ["extend_to_line_start", "select_mode"]
+
+[keys.select.space]
+"/" = "no_op"
+e = "no_op"
+E = "no_op"
+h = "no_op"
+y = "no_op"
+Y = "no_op"
+p = "no_op"
+P = "no_op"
+k = ":buffer-close"
+O = ":buffer-close-others"
+"A-c" = "no_op"
+g = "global_search"
+c = "changed_file_picker"
+"space" = "goto_word"
+
+[keys.insert]
+"C-space" = "completion"

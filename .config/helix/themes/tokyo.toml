@@ -1,0 +1,7 @@
+inherits = "tokyonight"
+"ui.background" ={}
+"ui.statusline.inactive" = { fg = "stone", bg = "panel" }
+"ui.statusline.normal" = { bg = "aqua", fg = "panel" }
+"ui.statusline.insert" = { bg = "leaf", fg = "panel" }
+"ui.statusline.select" = { bg = "sky", fg = "panel" }
+"ui.virtual.inlay-hint" = { bg = "#272c33", fg = "#6b829c"}
