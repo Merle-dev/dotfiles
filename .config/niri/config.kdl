@@ -377,7 +377,7 @@ binds {
     Super+Shift+R hotkey-overlay-title="Open Crates-Tui" { spawn-sh "alacritty -e crates-tui"; }
     Ctrl+Shift+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Super+P hotkey-overlay-title="Run an Application: fuzzel" { spawn-sh "fuzzel -p \"λ \" -w 60 -l 25 --use-bold --background-color=#0c0d18cc --text-color=#a9b1d6ff"; }
-    Super+Shift+Delete hotkey-overlay-title="wleave" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Super+Shift+Delete hotkey-overlay-title="wleave" { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
