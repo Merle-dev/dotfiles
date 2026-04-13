@@ -6,6 +6,7 @@
       runtimeInputs = [];
       text = ''
         #!/bin/bash
+        set -e
         "$HOME/council/target/release/council" "$1" "$2" "$3"
       '';
     })
