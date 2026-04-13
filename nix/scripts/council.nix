@@ -7,9 +7,7 @@
       text = ''
         #!/bin/bash
         set -e
-        pushd ~/council
-        cargo run -r -- $1 $2 $3
-        popd
+        ~/council/target/release/council $1 $2 $3
       '';
     })
   ];
