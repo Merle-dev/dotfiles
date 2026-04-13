@@ -1,0 +1,16 @@
+*
+
+!*/
+
+!scripts/**
+!wallpapers/**
+!nix/**
+!alacritty/**
+!fish/**
+!helix/**
+!niri/**
+!noctalia/**
+!hyfetch.json
+!.gitignore
+
+**/fish_variables
