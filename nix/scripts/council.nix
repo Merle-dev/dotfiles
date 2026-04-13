@@ -7,7 +7,12 @@
       text = ''
         #!/bin/bash
         set -e
-        bash -c "$HOME/council/target/release/council $1 $2 $3"
+
+        a1="''${1:-}"
+        a2="''${2:-}"
+        a3="''${3:-}"
+
+        bash -c "$HOME/council/target/release/council $a1 $a2 $a3"
       '';
     })
   ];
