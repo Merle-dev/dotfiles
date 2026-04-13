@@ -1,18 +1,30 @@
 warning: Git tree '/home/merle/.config' is dirty
-building the system configuration...
-warning: Git tree '/home/merle/.config' is dirty
 evaluation warning: 'system' has been renamed to/replaced by 'stdenv.hostPlatform.system'
-these 3 derivations will be built:
-  /nix/store/ji5zi9yd0gqij27kgml9k4bh90mwnn9w-etc-nix-registry.json.drv
-  /nix/store/xrblbiscmaw3vfx3c42w0bf6jlx2r9k5-etc.drv
-  /nix/store/k97y8acj7cwjbwhxxcr0qxfc3gvg0lsr-nixos-system-nixos-25.11.20260207.23d72da.drv
-building '/nix/store/ji5zi9yd0gqij27kgml9k4bh90mwnn9w-etc-nix-registry.json.drv'...
-building '/nix/store/xrblbiscmaw3vfx3c42w0bf6jlx2r9k5-etc.drv'...
-building '/nix/store/k97y8acj7cwjbwhxxcr0qxfc3gvg0lsr-nixos-system-nixos-25.11.20260207.23d72da.drv'...
-activating the configuration...
-warning: password file ‘../secret_password.txt’ does not exist
-setting up /etc...
-reloading user units for merle...
-restarting sysinit-reactivation.target
-the following new units were started: NetworkManager-dispatcher.service
-Done. The new configuration is /nix/store/x2wvzsi3l9jrn6y95k3cwa7b84s0mj3k-nixos-system-nixos-25.11.20260207.23d72da
+these 4 derivations will be built:
+  /nix/store/5ais6chrcj2fyln6imkhq05dwrpia4cm-rebuild.drv
+  /nix/store/ignwcafd4a53p9l7jch0hqawba2w4iji-home-manager-path.drv
+  /nix/store/frvhxz89zryqpi9bigwzwqf5lanhxh0r-activation-script.drv
+  /nix/store/ijrz2460y47mkw7bxv06qad2n7dsvb72-home-manager-generation.drv
+building '/nix/store/5ais6chrcj2fyln6imkhq05dwrpia4cm-rebuild.drv'...
+building '/nix/store/ignwcafd4a53p9l7jch0hqawba2w4iji-home-manager-path.drv'...
+building '/nix/store/frvhxz89zryqpi9bigwzwqf5lanhxh0r-activation-script.drv'...
+building '/nix/store/ijrz2460y47mkw7bxv06qad2n7dsvb72-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+replacing old 'home-manager-path'
+installing 'home-manager-path'
+building '/nix/store/4mr8s9z8vpvssl58qmhfxvbh6h2dr5wj-user-environment.drv'...
+Activating dconfSettings
+Activating linkGeneration
+Cleaning up orphan links from /home/merle
+Creating home file links in /home/merle
+Activating onFilesChange
+Activating reloadSystemd
+warning: Git tree '/home/merle/.config' is dirty
+
+There are 318 unread and relevant news items.
+Read them by running the command "home-manager news".
+

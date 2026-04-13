@@ -8,7 +8,7 @@
         #!/bin/bash
         set -e
 
-        NIX_CONFIG_DIR="~/.config/nix"
+        NIX_CONFIG_DIR="$HOME/.config/nix"
         pushd "$NIX_CONFIG_DIR"
 
         $EDITOR .
@@ -23,7 +23,7 @@
             exit 0
         elif echo "$CHANGED_FILES" | grep -q -E "flake.nix|home.nix|scripts|modules"; then
             REBUILD_HOME=true
-        elif echo "$CHANGED_FILES" | grep -q -E "flake.nix|nixos"; then
+        elif echo "$CHANGED_FILES" | grep -q -E "flake.nix|secret_password.txt|nixos"; then
             REBUILD_SYSTEM=true
         fi
 
