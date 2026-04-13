@@ -1,18 +1,44 @@
-warning: Git tree '/home/merle' is dirty
-building the system configuration...
-warning: Git tree '/home/merle' is dirty
+warning: Git tree '/home/merle/.config' is dirty
 evaluation warning: 'system' has been renamed to/replaced by 'stdenv.hostPlatform.system'
-these 3 derivations will be built:
-  /nix/store/kiki9figfhc20pd2v9vp1c8n8xk5kv18-etc-nix-registry.json.drv
-  /nix/store/g4g3hmkz0pd0apsir4mj53w8z35b2v9n-etc.drv
-  /nix/store/hkp6mb4nd0apfljrqzqszq9kn6lq0x8n-nixos-system-nixos-25.11.20260207.23d72da.drv
-building '/nix/store/kiki9figfhc20pd2v9vp1c8n8xk5kv18-etc-nix-registry.json.drv'...
-building '/nix/store/g4g3hmkz0pd0apsir4mj53w8z35b2v9n-etc.drv'...
-building '/nix/store/hkp6mb4nd0apfljrqzqszq9kn6lq0x8n-nixos-system-nixos-25.11.20260207.23d72da.drv'...
-activating the configuration...
-warning: password file ‘../secret_password.txt’ does not exist
-setting up /etc...
-reloading user units for merle...
-restarting sysinit-reactivation.target
-the following new units were started: NetworkManager-dispatcher.service
-Done. The new configuration is /nix/store/2x1ig1gmvh93gk4wkn386m1iydbrf7s4-nixos-system-nixos-25.11.20260207.23d72da
+these 4 derivations will be built:
+  /nix/store/wp19r5fw5jy5mm531cb2lxjnzr2404yh-rebuild.drv
+  /nix/store/aw07ma2f0zbviijwzz8vhxjsnkqn2pza-home-manager-path.drv
+  /nix/store/hhq1g4jjcp306wsq8syrinma7pxfpqlb-activation-script.drv
+  /nix/store/mjh6icri6fvc1qdgzbm1xr1shhdfak7s-home-manager-generation.drv
+building '/nix/store/wp19r5fw5jy5mm531cb2lxjnzr2404yh-rebuild.drv'...
+building '/nix/store/aw07ma2f0zbviijwzz8vhxjsnkqn2pza-home-manager-path.drv'...
+building '/nix/store/hhq1g4jjcp306wsq8syrinma7pxfpqlb-activation-script.drv'...
+building '/nix/store/mjh6icri6fvc1qdgzbm1xr1shhdfak7s-home-manager-generation.drv'...
+Starting Home Manager activation
+Activating checkFilesChanged
+Activating checkLinkTargets
+Activating writeBoundary
+Activating installPackages
+replacing old 'home-manager-path'
+installing 'home-manager-path'
+building '/nix/store/b6wvpyjdrhpkz9m7gxdq4wpvf23bbl08-user-environment.drv'...
+Activating dconfSettings
+Activating linkGeneration
+Cleaning up orphan links from /home/merle
+Creating home file links in /home/merle
+Activating onFilesChange
+Activating reloadSystemd
+The user systemd session is degraded:
+  UNIT                          LOAD   ACTIVE SUB    DESCRIPTION
+● app-blueman@autostart.service loaded failed failed Blueman Applet
+● app-vesktop@autostart.service loaded failed failed Vesktop
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+2 loaded units listed.
+Attempting to reload services anyway...
+The service manager is degraded.
+Failed services: app-vesktop@autostart.service, app-blueman@autostart.service
+Attempting to continue anyway...
+warning: Git tree '/home/merle/.config' is dirty
+
+There are 318 unread and relevant news items.
+Read them by running the command "home-manager news".
+

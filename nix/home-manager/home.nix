@@ -5,6 +5,7 @@
 }: {
   imports = [
     ../modules/noctalia.nix
+    ../scripts/rebuild.nix
   ];
   gtk = {
     enable = true;
@@ -133,7 +134,6 @@
       jetbrains.rust-rover
 
       marksman
-      alejandra
       kdlfmt
       tombi
 
