@@ -6,6 +6,7 @@
   imports = [
     ../modules/noctalia.nix
     ../scripts/rebuild.nix
+    ../scripts/council.nix
   ];
   gtk = {
     enable = true;
