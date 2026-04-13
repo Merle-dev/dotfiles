@@ -8,7 +8,7 @@
         #!/bin/bash
         set -e
 
-        NIX_CONFIG_DIR="$HOME/.config/nix"
+        NIX_CONFIG_DIR="~/.config/nix"
         pushd "$NIX_CONFIG_DIR"
 
         $EDITOR .
