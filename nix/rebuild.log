@@ -1,14 +1,15 @@
 warning: Git tree '/home/merle/.config' is dirty
 evaluation warning: 'system' has been renamed to/replaced by 'stdenv.hostPlatform.system'
-these 4 derivations will be built:
-  /nix/store/5wlwzjd3zgb49x7nb39sc5a1cdl4i0m7-council.drv
-  /nix/store/wvklp0gib4rr04k193j1vlnfy3yynlgr-home-manager-path.drv
-  /nix/store/g1qyj1lq2b6sxjslggabrwhhixpdk5hy-activation-script.drv
-  /nix/store/r9g99am9i15962f64wgyx6cvrmql0sn8-home-manager-generation.drv
-building '/nix/store/5wlwzjd3zgb49x7nb39sc5a1cdl4i0m7-council.drv'...
-building '/nix/store/wvklp0gib4rr04k193j1vlnfy3yynlgr-home-manager-path.drv'...
-building '/nix/store/g1qyj1lq2b6sxjslggabrwhhixpdk5hy-activation-script.drv'...
-building '/nix/store/r9g99am9i15962f64wgyx6cvrmql0sn8-home-manager-generation.drv'...
+these 3 derivations will be built:
+  /nix/store/fgnlna6y9fb97qph35v3cvm0ivf81ayc-home-manager-path.drv
+  /nix/store/9w9f5hpc4crdmfk6f6mja76kf322m67l-activation-script.drv
+  /nix/store/jg2jha83g52m1gy3j9kxp7ydswc7j0s9-home-manager-generation.drv
+this path will be fetched (0.01 MiB download, 0.04 MiB unpacked):
+  /nix/store/43dn3ghnkc3an7r4z7rw6vz0vs2a7w39-cbonsai-1.4.2
+copying path '/nix/store/43dn3ghnkc3an7r4z7rw6vz0vs2a7w39-cbonsai-1.4.2' from 'https://cache.nixos.org'...
+building '/nix/store/fgnlna6y9fb97qph35v3cvm0ivf81ayc-home-manager-path.drv'...
+building '/nix/store/9w9f5hpc4crdmfk6f6mja76kf322m67l-activation-script.drv'...
+building '/nix/store/jg2jha83g52m1gy3j9kxp7ydswc7j0s9-home-manager-generation.drv'...
 Starting Home Manager activation
 Activating checkFilesChanged
 Activating checkLinkTargets
@@ -16,7 +17,7 @@ Activating writeBoundary
 Activating installPackages
 replacing old 'home-manager-path'
 installing 'home-manager-path'
-building '/nix/store/a31cb6711r6kwyvckmj40kbfvh6h1mb8-user-environment.drv'...
+building '/nix/store/9rcq7nz5w2jaxszd0nx2rzgq86ba5gs9-user-environment.drv'...
 Activating dconfSettings
 Activating linkGeneration
 Cleaning up orphan links from /home/merle

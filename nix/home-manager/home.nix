@@ -92,6 +92,7 @@
       ffmpeg
       hyfetch
       pamixer
+      cbonsai
       ripgrep
       pciutils
       arp-scan
