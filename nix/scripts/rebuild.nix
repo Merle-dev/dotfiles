@@ -21,9 +21,9 @@
             echo "No changes detected, exiting."
             popd
             exit 0
-        elif echo "$CHANGED_FILES" | grep -q "home.nix|scripts|modules"; then
+        elif echo "$CHANGED_FILES" | grep -q -E "flake.nix|home.nix|scripts|modules"; then
             REBUILD_HOME=true
-        else
+        elif echo "$CHANGED_FILES" | grep -q -E "flake.nix|nixos"; then
             REBUILD_SYSTEM=true
         fi
 
