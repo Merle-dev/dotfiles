@@ -61,6 +61,7 @@
       hypridle
       hyprshot
       xdg-utils
+      libnotify
       quickshell
       waybar-mpris
       wl-clipboard-rs
