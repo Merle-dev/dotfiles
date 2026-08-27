@@ -1,0 +1,23 @@
+# Ignore everything by default
+*
+
+# Allow Git to traverse subdirectories
+!*/
+
+# Track specific root files
+!.gitignore
+!hyfetch.json
+
+# Track specific folders and their contents
+!alacritty/**
+!fish/**
+!helix/**
+!niri/**
+!nix/**
+!quickshell/**
+!scripts/**
+!wallpapers/**
+
+# Exclusions (MUST come after the ! includes above)
+nix/env/
+**/fish_variables

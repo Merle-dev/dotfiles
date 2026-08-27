@@ -1,0 +1,198 @@
+# "ui.background" = { fg = "text", bg = "base" }
+"ui.background" = { }
+"ui.background.separator" = { bg = "base" }
+
+"ui.cursor" = { fg = "text", bg = "highlight_high" }
+# "ui.cursor.select" = {}
+"ui.cursor.match" = { fg = "text", bg = "highlight_med" }
+"ui.cursor.primary" = { fg = "text", bg = "muted" }
+
+# "ui.gutter" = {}
+# "ui.gutter.selected" = {}
+
+"ui.linenr" = { fg = "muted" }
+"ui.linenr.selected" = { fg = "rose" }
+
+"ui.bufferline" = { fg = "muted", bg = "base" }
+"ui.bufferline.active" = { fg = "rose", bg = "overlay" }
+"ui.statusline" = { fg = "subtle", bg = "surface" }
+"ui.statusline.inactive" = { fg = "muted", bg = "surface" }
+"ui.statusline.normal" = { fg = "rose", bg = "rose_10" }
+"ui.statusline.insert" = { fg = "foam", bg = "foam_10" }
+"ui.statusline.select" = { fg = "iris", bg = "iris_10" }
+# "ui.statusline.separator" = {}
+
+"ui.popup" = { fg = "text", bg = "surface" }
+
+"ui.picker.header" = { fg = "iris", modifiers = ["bold"] }
+
+"ui.window" = { fg = "overlay", bg = "base" }
+"ui.help" = { fg = "subtle", bg = "overlay" }
+
+"ui.text" = { fg = "text" }
+"ui.text.focus" = { bg = "overlay" }
+"ui.text.info" = { fg = "subtle" }
+"ui.text.directory" = "sky"
+
+"ui.virtual.jump-label" = { fg = "base", bg = "subtle", modifiers = ["bold"] }
+"ui.virtual.ruler" = { bg = "overlay" }
+"ui.virtual.whitespace" = { fg = "highlight_high" }
+"ui.virtual.indent-guide" = { fg = "muted" }
+"ui.virtual.inlay-hint" = { fg = "subtle", bg = "surface" }
+
+"ui.menu" = { fg = "subtle", bg = "surface" }
+"ui.menu.selected" = { fg = "text" }
+"ui.menu.scroll" = { fg = "muted", bg = "highlight_med" }
+
+"ui.selection" = { bg = "overlay" }
+"ui.selection.primary" = { bg = "love_10" }
+
+"ui.cursorline.primary" = { bg = "rose_10" }
+"ui.cursorline.secondary" = { bg = "surface" }
+
+"warning" = "gold"
+"error" = "love"
+"info" = "foam"
+"hint" = "tea"
+"debug" = "rose"
+
+"diagnostic" = { underline = { color = "subtle", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "iris", style = "curl" } }
+"diagnostic.info" = { underline = { color = "foam", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "gold", style = "curl" } }
+"diagnostic.error" = { underline = { color = "love", style = "curl" } }
+"special" = "rose"
+
+"attribute" = "iris"
+
+"type" = "love"
+"type.builtin" = "iris"
+"type.parameter" = "tea"
+"type.enum.variant" = "amber"
+
+"constructor" = "foam"
+
+"constant" = "amber"
+# "constant.builtin" = "love"
+# "constant.builtin.boolean" = "rose"
+# "constant.character" = "gold"
+# "constant.character.escape" = "pine"
+# "constant.numeric" = "gold"
+# "constant.numeric.integer" = ""
+# "constant.numeric.float" = ""
+
+"string" = "tea"
+# "string.regexp" = ""
+# "string.special" = ""
+"string.special.path" = { fg = "tea",modifiers = ["italic"]  }
+"string.special.url" = { fg = "tea",modifiers = ["italic"]  }
+"string.special.symbol" = "iris"
+
+"comment" = { fg = "muted", modifiers = ["italic"] }
+# "comment.line" = ""
+# "comment.block" = ""
+# "comment.block.documentation" = ""
+
+"variable" = "text"
+"variable.builtin" = "iris"
+"variable.parameter" = "rose"
+# "variable.other" = ""
+"variable.other.member" = "sky"
+
+"label" = "foam"
+
+"punctuation" = "foam"
+# "punctuation.delimiter" = ""
+# "punctuation.bracket" = ""
+# "punctuation.special" = ""
+
+"keyword" = "purple"
+# "keyword.control" = ""
+# "keyword.control.conditional" = ""
+# "keyword.control.repeat" = { fg = "purple", modifiers = ["italic"] }
+# "keyword.control.import" = ""
+# "keyword.control.return" = ""
+# "keyword.control.exception" = ""
+"keyword.operator" = { fg = "subtle", modifiers = ["bold"] }
+# "keyword.directive" = ""
+"keyword.function" = { fg = "purple", modifiers = ["bold"] }
+"keyword.storage" = { fg = "purple", modifiers = ["italic"] }
+# "keyword.storage" = ""
+# "keyword.storage.type" = ""
+# "keyword.storage.modifier" = ""
+
+"operator" = "sky"
+
+"function" = { fg = "pine", modifiers = ["italic"] }         # maybe pine
+"function.builtin" = { fg = "rose", modifiers = ["bold"] }
+# "function.method" = ""
+# "function.macro" = ""
+# "function.special" = ""
+
+"tag" = "foam"
+
+"namespace" = "sky"
+
+"markup.heading.marker" = "muted"
+"markup.heading" = { fg = "iris", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "iris", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "foam", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "rose", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "gold", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "pine", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "foam", modifiers = ["bold"] }
+# "markup.heading.completion" = ""
+# "markup.heading.hover" = ""
+"markup.list" = "muted"
+# "markup.list.unnumbered" = ""
+# "markup.list.numbered" = ""
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = "iris"
+"markup.link.url" = { fg = "iris", underline = { color = "iris", style = "line" } }
+"markup.link.label" = "subtle"
+"markup.link.text" = "foam"
+"markup.quote" = "subtle"
+"markup.raw" = "subtle"
+"markup.raw.inline" = "gold"
+# "markup.raw.inline.completion" = {}
+# "markup.raw.inline.hover" = {}
+"markup.raw.block" = "gold"
+# "markup.normal" = ""
+# "markup.normal.completion" = ""
+# "markup.normal.hover" = ""
+
+"diff" = "overlay"
+"diff.plus" = "foam"
+"diff.minus" = "love"
+"diff.delta" = "highlight_high"
+# "diff.delta.moved" = ""
+
+[palette]
+base = "#191724"
+surface = "#1f1d2e"
+overlay = "#26233a"
+muted = "#6e6a86"
+subtle = "#908caa"
+text = "#e0def4"
+love = "#eb6f92"
+love_10 = "#311f30"
+gold = "#f6c177"
+gold_10 = "#30282c"
+rose = "#ebbcba"
+rose_10 = "#2f2834"
+pine = "#31748f"
+pine_10 = "#1a2030"
+foam = "#9ccfd8"
+foam_10 = "#252937"
+iris = "#c4a7e7"
+iris_10 = "#2b2539"
+amber = "#f2aa1b"
+tea = "#adde86"
+purple = "#ba6ab6"
+sky = "#b2ffff"
+highlight_low = "#21202e"
+highlight_med = "#403d52"
+highlight_high = "#524f67"
+
