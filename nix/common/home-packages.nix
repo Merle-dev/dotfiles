@@ -38,6 +38,7 @@
     mixxx
     fuzzel
     vesktop
+    waypaper
 
     papirus-icon-theme
     papirus-folders
